@@ -16,7 +16,6 @@ six
 sklearn
 threadpoolctl
 Werkzeug
-sys
 matplotlib
 keras
 tensorflow
