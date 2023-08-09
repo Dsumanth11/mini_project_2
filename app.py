@@ -63,7 +63,6 @@ def submit():
         # else:
         #     name="NO"
         
-        import sys
         import pandas as pd
         import numpy as np
         import sklearn
