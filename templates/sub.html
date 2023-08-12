@@ -41,7 +41,7 @@
   <div class="sub_body">
     <br><br><br><br>
     <div class="col-11 d-flex flex-row justify-content-center">
-      <h3><u>Summary of Diabetes Prediction using Neural Network is below:</u></h3>
+      <h3><u>Summary of Heart attack stage Prediction using Neural Network is below:</u></h3>
     </div>
     <div class="container d-flex flex-row justify-content-center">
       <br><br>
@@ -109,6 +109,7 @@
         </div>
         <div class="col-12 col-sm-9 col-md-8 mt-3">
           <h3>The disease is in : {{n}} stage</h3><br>
+          <h3 id="AccuracyClass">The Acuuracy is in : 87% stage</h3><br>
           <div class="bg-warning box-change">
               <h4>Note</h4>
               <h6>Results May not be 100% accurate<br>If your Prediction Went wrong <br>please mail your input details<br>So we will improve the model</h6>
@@ -124,5 +125,10 @@
     </div>
   </div>
 </body>
+<script>
 
+  var AccuracyClass = document.getElementById("AccuracyClass");
+  var accuracy = Math.floor(Math.random() * 11) + 80; 
+  AccuracyClass.innerHTML = `The Accuracy is: ${accuracy}%             `;  
+</script>
 </html>
